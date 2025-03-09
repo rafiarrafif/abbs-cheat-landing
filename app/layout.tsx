@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import HeroProviders from "./providers/HeroUIProviders";
 import localFont from "next/font/local";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const Inter = localFont({
@@ -111,7 +111,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${Inter.className}`}>{children}</body>
+      <body className={`${Inter.className}`}>
+        <HeroProviders>{children}</HeroProviders>
+      </body>
     </html>
   );
 }

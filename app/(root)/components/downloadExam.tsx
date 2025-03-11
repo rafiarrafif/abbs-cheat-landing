@@ -27,7 +27,7 @@ const downloadExam = () => {
             onPress={() => {
               const baseUrl = window.location.origin;
               window.open(
-                `${baseUrl}/Browser%20Ujian%20Setup%201.0.0%20%28Windows%29.exe`,
+                `${baseUrl}/Browser_Ujian_Setup_1.0.0_Windows.exe`,
                 "_blank"
               );
             }}

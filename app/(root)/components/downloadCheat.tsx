@@ -26,7 +26,10 @@ const downloadCheat = () => {
             endContent={<SolarDownloadBold className="focus:outline-none" />}
             onPress={() => {
               const baseUrl = window.location.origin;
-              window.open(`${baseUrl}/Al-Abidin%20Cheat%20Pro.exe`, "_blank");
+              window.open(
+                `${baseUrl}/Al-Abidin_Cheat_Pro_V1.32.0.exe`,
+                "_blank"
+              );
             }}
           >
             Download

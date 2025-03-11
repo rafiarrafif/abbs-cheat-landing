@@ -9,6 +9,26 @@ export default function fqa() {
       <AccordionItem
         key="1"
         aria-label="Accordion 1"
+        title="Apakah aplikasi ini aman dari virus?"
+      >
+        <p className="text-sm text-neutral-700">
+          <strong>Aplikasi ini 100% aman dan bebas dari virus</strong>.
+          Peringatan Windows Defender muncul karena aplikasi ini belum
+          ditandatangani dengan sertifikat digital resmi serta menggunakan
+          binding dengan aplikasi &rsquo;Ujian Al-Abidin&rsquo; pada port
+          tertentu, yang bisa dianggap mencurigakan oleh sistem keamanan.
+          Deteksi ini hanyalah false positive, bukan indikasi ancaman
+          sebenarnya. Jika ragu, Anda bisa memverifikasi keamanan aplikasi
+          dengan VirusTotal (
+          <a href="https://www.virustotal.com/" target="_blank">
+            https://www.virustotal.com/
+          </a>
+          )
+        </p>
+      </AccordionItem>
+      <AccordionItem
+        key="2"
+        aria-label="Accordion 2"
         title="Berapa biaya untuk mendapatkan kode autentikasi?"
       >
         <p className="text-sm text-neutral-700">
@@ -18,8 +38,8 @@ export default function fqa() {
         </p>
       </AccordionItem>
       <AccordionItem
-        key="2"
-        aria-label="Accordion 2"
+        key="3"
+        aria-label="Accordion 3"
         title="Berapa lama masa aktif kode autentikasi dalam satu kali pembelian?"
       >
         <p className="text-sm text-neutral-700">
@@ -29,8 +49,8 @@ export default function fqa() {
         </p>
       </AccordionItem>
       <AccordionItem
-        key="3"
-        aria-label="Accordion 3"
+        key="4"
+        aria-label="Accordion 4"
         title="Berapa kali satu kode autentikasi dapat digunakan?"
       >
         <p className="text-sm text-neutral-700">
@@ -42,8 +62,8 @@ export default function fqa() {
         </p>
       </AccordionItem>
       <AccordionItem
-        key="4"
-        aria-label="Accordion 4"
+        key="5"
+        aria-label="Accordion 5"
         title="Apa jaminan keamanan yang diberikan kepada pengguna?"
       >
         <p className="text-sm text-neutral-700">
@@ -54,8 +74,8 @@ export default function fqa() {
         </p>
       </AccordionItem>
       <AccordionItem
-        key="5"
-        aria-label="Accordion 5"
+        key="6"
+        aria-label="Accordion 6"
         title="Bagaimana sistem garansi yang diberikan kepada pengguna?"
       >
         <p className="text-sm text-neutral-700">
@@ -65,20 +85,21 @@ export default function fqa() {
         </p>
       </AccordionItem>
       <AccordionItem
-        key="6"
-        aria-label="Accordion 6"
+        key="7"
+        aria-label="Accordion 7"
         title="Bagaimana jika aplikasi tidak berfungsi sesuai yang dijanjikan?"
       >
         <p className="text-sm text-neutral-700">
           Kami siap membantu Anda dalam menyelesaikan masalah. Cukup tekan
-          tombol 'Butuh Bantuan', dan tim kami akan memberikan dukungan hingga
-          aplikasi berjalan dengan baik. Jika setelah semua upaya aplikasi masih
-          tidak dapat digunakan, Anda berhak mengajukan klaim garansi.
+          tombol &rsquo;Butuh Bantuan&rsquo;, dan tim kami akan memberikan
+          dukungan hingga aplikasi berjalan dengan baik. Jika setelah semua
+          upaya aplikasi masih tidak dapat digunakan, Anda berhak mengajukan
+          klaim garansi.
         </p>
       </AccordionItem>
       <AccordionItem
-        key="7"
-        aria-label="Accordion 7"
+        key="8"
+        aria-label="Accordion 8"
         title="Bagaimana dukungan pembaruan (support update) yang diberikan?"
       >
         <p className="text-sm text-neutral-700">

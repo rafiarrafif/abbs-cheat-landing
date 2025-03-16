@@ -1,29 +1,29 @@
-name: cd
+name: ci
 
 on:
   push:
     branches:
       - deployment
+  pull_request:
+    branches:
+      - deployment
 
 jobs:
-  cd:
+  ci:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout 🛎
+        uses: actions/checkout@deployment
 
-      - name: Deploy Using ssh
-        uses: appleboy/ssh-action@master
+      - name: Setup node env 🏗
+        uses: actions/setup-node@v2.1.5
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 22
-          script: |
-            cd ~/app/example-ci-cd-auto-deploy-vps
-            git pull origin master
-            git status
-            yarn install
-            yarn build
-            pm2 reload ExampleCiCdAutoDeployVps
-            pm2 restart ExampleCiCdAutoDeployVps
+          node-version: 20
+          check-latest: true
+
+      - name: Install dependencies 👨🏻‍💻
+        run: npm i
+
+      - name: Run linter 👀
+        run: npm run lint

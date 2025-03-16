@@ -20,7 +20,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd ~/www/wwwroot/abbs.puss.ink
+            cd ../www/wwwroot/abbs.puss.ink
             git pull origin deployment
             git status
             npm install

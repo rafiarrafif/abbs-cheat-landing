@@ -15,7 +15,7 @@ const downloadCheat = () => {
   return (
     <Card className="w-[300px] max-sm:w-full rounded">
       <CardHeader>
-        <h1 className="text-neutral-950">Cheat Pro V1.33.0</h1>
+        <h1 className="text-neutral-950">Cheat Pro V1.33.0 VBTEST</h1>
       </CardHeader>
       <Divider />
       <CardBody className="py-0 pt-3">

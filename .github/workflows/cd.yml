@@ -23,7 +23,7 @@ jobs:
             cd ../www/wwwroot/abbs.puss.ink
             git pull origin deployment
             git status
-            ../www/server/nodejs/v20.18.0/bin/npm install
-            ../www/server/nodejs/v20.18.0/bin/npm build
-            ../www/server/nodejs/v20.18.0/bin/pm2 reload abbs
-            ../www/server/nodejs/v20.18.0/bin/pm2 restart abbs
+            ../../../www/server/nodejs/v20.18.0/bin/npm install
+            ../../../www/server/nodejs/v20.18.0/bin/npm build
+            ../../../www/server/nodejs/v20.18.0/bin/pm2 reload abbs
+            ../../../www/server/nodejs/v20.18.0/bin/pm2 restart abbs

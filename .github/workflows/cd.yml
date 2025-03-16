@@ -20,10 +20,11 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
+            export PATH=$PATH:/www/server/nodejs/v20.18.0/bin
             cd ../www/wwwroot/abbs.puss.ink
             git pull origin deployment
             git status
-            ../../../www/server/nodejs/v20.18.0/bin/npm install
-            ../../../www/server/nodejs/v20.18.0/bin/npm build
-            ../../../www/server/nodejs/v20.18.0/bin/pm2 reload abbs
-            ../../../www/server/nodejs/v20.18.0/bin/pm2 restart abbs
+            npm install
+            npm run build
+            pm2 reload abbs
+            pm2 restart abbs
